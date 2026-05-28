@@ -93,6 +93,55 @@ src/
 
 ---
 
+# 🔗 API Endpoints
+
+## 🔐 Auth Routes
+
+### Register User
+- **POST** `/api/auth/register`
+- Description: Create a new user account
+- Body:
+```json
+{
+  "name": "John",
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+Login User
+POST /api/auth/login
+Description: Login user and return JWT token
+Body:
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+
+Get All Tasks
+GET /api/tasks
+Description: Get all tasks for logged-in user
+
+Create Task
+POST /api/tasks
+Description: Create a new task
+Body:
+{
+  "title": "My Task",
+  "description": "Task details"
+}
+
+
+Update Task
+PUT /api/tasks/:id
+Description: Update existing task
+
+
+
+Delete Task
+DELETE /api/tasks/:id
+Description: Delete a task
+
 # ⚙️ Setup Instructions
 
 ## 1. Clone repository
