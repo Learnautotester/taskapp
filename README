@@ -1,0 +1,139 @@
+# 📌 Task Manager App (MERN Stack)
+
+A full-stack Task Manager web application built using **React, Node.js, Express, and MongoDB**.  
+It allows users to register, login, and manage daily tasks with full CRUD functionality.
+
+---
+
+# 🚀 Features
+
+## 🔐 Authentication
+- User Signup and Login
+- JWT-based authentication
+- Protected routes
+- Persistent login using localStorage
+
+---
+
+## 📝 Task Management
+- Create tasks with title and description
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed or pending
+- View all tasks in a clean card layout
+
+---
+
+## 🎨 UI / UX
+- Responsive design (mobile + desktop)
+- Clean dashboard UI
+- Task cards layout
+- Empty state when no tasks exist
+- Toast notifications for actions
+
+---
+
+## ⚙️ Validation
+- Signup/Login form validation
+- Prevent empty task creation
+- Proper error messages for better UX
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- Context API
+- Axios
+- React Router DOM
+- Tailwind CSS
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- CORS
+
+---
+
+# 📁 Project Structure
+src/
+│
+├── components/
+│ ├── TaskCard.jsx
+│ ├── TaskForm.jsx
+│ ├── TaskList.jsx
+│ ├── Header.jsx
+│
+├── pages/
+│ ├── Login.jsx
+│ ├── Signup.jsx
+│ └── Dashboard.jsx
+│
+├── context/
+│ └── AuthContext.js
+│
+├── services/
+│ └── api.js
+
+
+
+---
+
+# 🔐 Authentication Flow
+
+1. User logs in or signs up
+2. Backend generates JWT token
+3. Token is stored in localStorage
+4. Token is sent with API requests
+5. Protected routes verify token
+
+---
+
+# ⚙️ Setup Instructions
+
+## 1. Clone repository
+git clone https://github.com/your-username/task-manager.git
+
+
+---
+
+## 2. Install frontend dependencies
+cd backend
+npm install
+npm run dev
+
+# 🌐 Environment Variables
+
+Create a `.env` file in backend:
+
+
+---
+
+# 🚀 Deployment
+
+## Frontend (Vercel)
+- Import GitHub repo
+- Build command: `npm run build`
+- Output folder: `build`
+
+## Backend (Render)
+- Create Web Service
+- Start command: `npm start`
+- Add environment variables
+
+---
+
+# 📌 Future Improvements
+- Search tasks
+- Dark mode
+- Pagination
+- Drag & drop task board
+- Better UI enhancements
+
+---
+
+
